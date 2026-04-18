@@ -1,5 +1,6 @@
 # Cognitive-arcade
 A JavaScript prototype of cognitive tasks (Stroop, N-Back, Go/No-Go) for neuroscientific exploration.
+[Click here to play the game] https://anyma-exe.github.io/cognitive-arcade/
 # Project Description
 This project is a prototype developed to implement and test classic cognitive psychology paradigms. It was created as part of a personal project to bridge the gap between theoretical models of attention/inhibition and computer tools.
 
