@@ -1,0 +1,149 @@
+/* Style général */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a2e;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+/* Cache les éléments */
+.cache {
+  display: none;
+}
+
+/* Menu principal */
+#menu-principal {
+  max-width: 700px;
+  padding: 40px;
+}
+
+.sous-titre {
+  color: #aaaaaa;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+/* Les cartes de jeux */
+#liste-jeux {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.carte-jeu {
+  background-color: #16213e;
+  border: 2px solid #e94560;
+  border-radius: 15px;
+  padding: 30px 25px;
+  width: 160px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.carte-jeu:hover {
+  transform: scale(1.05);
+  background-color: #e94560;
+}
+
+.emoji-jeu {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.carte-jeu h2 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.carte-jeu p {
+  font-size: 13px;
+  color: #cccccc;
+  margin: 0;
+}
+
+/* Écrans de jeu */
+#jeu-stroop, #jeu-nback, #jeu-gonogo {
+  max-width: 600px;
+  padding: 40px;
+}
+
+/* Le mot coloré Stroop */
+#mot-affiche {
+  font-size: 80px;
+  font-weight: bold;
+  margin: 40px 0;
+  letter-spacing: 4px;
+}
+
+/* La lettre N-Back */
+#lettre-affichee {
+  font-size: 120px;
+  font-weight: bold;
+  margin: 30px 0;
+  color: #e94560;
+  transition: opacity 0.1s;
+}
+
+/* Bordure lumineuse pour les lettres cibles N-Back */
+.bordure-cible {
+  text-shadow:
+    0 0 20px #ffffff,
+    0 0 40px #e94560,
+    0 0 60px #e94560;
+  transition: text-shadow 0.1s;
+}
+
+/* Le symbole Go/No-Go */
+#symbole-affiche {
+  font-size: 120px;
+  margin: 30px 0;
+  transition: opacity 0.15s;
+}
+
+/* Boutons */
+button {
+  background-color: #e94560;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #c73652;
+}
+
+/* Bouton retour */
+.bouton-retour {
+  background-color: transparent;
+  border: 2px solid #aaaaaa;
+  color: #aaaaaa;
+  padding: 8px 20px;
+  font-size: 14px;
+}
+
+.bouton-retour:hover {
+  background-color: #aaaaaa;
+  color: #1a1a2e;
+}
+
+/* Feedback */
+#feedback-stroop, #feedback-nback, #feedback-gonogo {
+  font-size: 28px;
+  font-weight: bold;
+  height: 40px;
+}
+
+#compteur-stroop, #compteur-nback, #compteur-gonogo {
+  font-size: 18px;
+  color: #aaaaaa;
+}

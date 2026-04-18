@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Cognitive Arcade</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========== MENU PRINCIPAL ========== -->
+  <div id="menu-principal">
+    <h1>🧠 Cognitive Arcade</h1>
+    <p class="sous-titre">Test your cognitives functions</p>
+
+    <div id="liste-jeux">
+
+      <div class="carte-jeu" id="btn-stroop">
+        <div class="emoji-jeu">🎨</div>
+        <h2>Stroop Test</h2>
+        <p>Selective attention</p>
+      </div>
+
+      <div class="carte-jeu" id="btn-nback">
+        <div class="emoji-jeu">🔢</div>
+        <h2>N-Back</h2>
+        <p>Working memory</p>
+      </div>
+
+      <div class="carte-jeu" id="btn-gonogo">
+        <div class="emoji-jeu">🛑</div>
+        <h2>Go / No-Go</h2>
+        <p>Inhibition</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========== STROOP TEST ========== -->
+  <div id="jeu-stroop" class="cache">
+
+    <div id="ecran-accueil-stroop">
+      <button class="bouton-retour" id="retour-stroop">← Menu</button>
+      <h1>🎨 Stroop Test</h1>
+      <p>You will see colored words appear.</p>
+      <p>Press the <strong>keyboard key</strong> that corresponds to the <strong>ink color</strong> !</p>
+      <p>🔴 R = Red &nbsp; 🔵 B = Blue &nbsp; 🟢 G = Green</p>
+      <button id="bouton-start-stroop">Start</button>
+    </div>
+
+    <div id="ecran-jeu-stroop" class="cache">
+      <p id="consigne-stroop">Press on R, B or G depending on the color of the ink</p>
+      <div id="mot-affiche">RED</div>
+      <p id="feedback-stroop"></p>
+      <p id="compteur-stroop">Test : 1 / 20</p>
+    </div>
+
+    <div id="ecran-resultats-stroop" class="cache">
+      <h2>✅ Finished !</h2>
+      <p id="score-final-stroop"></p>
+      <p id="temps-moyen-stroop"></p>
+      <p id="diagnostic-stroop"></p>
+      <button id="bouton-restart-stroop">Start over</button>
+      <button class="bouton-retour" id="retour-resultats-stroop">← Menu</button>
+    </div>
+
+  </div>
+
+  <!-- ========== N-BACK ========== -->
+  <div id="jeu-nback" class="cache">
+
+    <div id="ecran-accueil-nback">
+      <button class="bouton-retour" id="retour-nback">← Menu</button>
+      <h1>🔢 N-Back</h1>
+      <p>Letters will appear one by one.</p>
+      <p>Press on <strong>Space key</strong> if the letter is <strong>identical to the previous one</strong>.</p>
+      <p>Otherwise, don't do anything !</p>
+      <button id="bouton-start-nback">Start</button>
+    </div>
+
+    <div id="ecran-jeu-nback" class="cache">
+      <p id="consigne-nback">Space key = same letter as the previous</p>
+      <div id="lettre-affichee">A</div>
+      <p id="feedback-nback"></p>
+      <p id="compteur-nback">Test : 1 / 20</p>
+    </div>
+
+    <div id="ecran-resultats-nback" class="cache">
+      <h2>✅ Finished !</h2>
+      <p id="score-final-nback"></p>
+      <p id="details-nback"></p>
+      <p id="diagnostic-nback"></p>
+      <button id="bouton-restart-nback">Start over</button>
+      <button class="bouton-retour" id="retour-resultats-nback">← Menu</button>
+    </div>
+
+  </div>
+
+  <!-- ========== GO/NO-GO ========== -->
+  <div id="jeu-gonogo" class="cache">
+
+    <div id="ecran-accueil-gonogo">
+      <button class="bouton-retour" id="retour-gonogo">← Menu</button>
+      <h1>🛑 Go / No-Go</h1>
+      <p>Symbols will appear one by one.</p>
+      <p>Press on <strong>Spare key</strong> when you see ⭐</p>
+      <p>Do <strong>nothing</strong> when you see ❌</p>
+      <button id="bouton-start-gonogo">Start</button>
+    </div>
+
+    <div id="ecran-jeu-gonogo" class="cache">
+      <p id="consigne-gonogo">⭐ = Space key &nbsp;|&nbsp; ❌ = Do nothing</p>
+      <div id="symbole-affiche"></div>
+      <p id="feedback-gonogo"></p>
+      <p id="compteur-gonogo">Test : 1 / 30</p>
+    </div>
+
+    <div id="ecran-resultats-gonogo" class="cache">
+      <h2>✅ Finished !</h2>
+      <p id="score-final-gonogo"></p>
+      <p id="details-gonogo"></p>
+      <p id="diagnostic-gonogo"></p>
+      <button id="bouton-restart-gonogo">Start over</button>
+      <button class="bouton-retour" id="retour-resultats-gonogo">← Menu</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
